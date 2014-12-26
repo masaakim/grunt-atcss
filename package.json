@@ -1,0 +1,19 @@
+{
+  "name": "grunt-acss",
+  "version": "0.0.1",
+  "description": "grunt plugin for ACSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/morishitter/grunt-acss/git"
+  },
+  "keywords": ["gruntplugin","acss"],
+  "author": "Masaaki Morishita",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+  }
+}
