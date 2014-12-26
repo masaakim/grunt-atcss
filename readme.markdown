@@ -32,7 +32,7 @@ grunt.initConfig({
     }
   },
 });
-```)
+```
 
 ## License
 
