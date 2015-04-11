@@ -6,10 +6,10 @@ module.exports = function (grunt) {
       tests: ['tmp']
     },
 
-    acss: {
+    atcss: {
       compile: {
         files: {
-          'tmp/acss.css': ['test/fixtures/acss.css'],
+          'tmp/atcss.css': ['test/fixtures/atcss.css'],
         }
       }
     },
@@ -17,7 +17,7 @@ module.exports = function (grunt) {
   });
 
   grunt.loadTasks('tasks');
-  grunt.registerTask('test', ['clean', 'acss']);
+  grunt.registerTask('test', ['clean', 'atcss']);
   grunt.registerTask('default', ['test']);
 
 };

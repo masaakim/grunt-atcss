@@ -1,8 +1,8 @@
 module.exports = function (grunt) {
 
-  var Acss = require('acss');
+  var Atcss = require('atcss');
 
-  grunt.registerMultiTask('acss', 'Compile ACSS', function () {
+  grunt.registerMultiTask('atcss', 'Compile AtCSS', function () {
 
     var options = this.options ({
       punctuation: '.',
@@ -18,9 +18,9 @@ module.exports = function (grunt) {
           return true;
         }
       }).map(function (filepath) {
-        var acssFile = grunt.file.read(filepath);
-        var acss = new Acss(acssFile);
-        return acss.process(acssFile);
+        var atcssFile = grunt.file.read(filepath);
+        var atcss = new Atcss(atcssFile);
+        return atcss.process(atcssFile);
       }).join(grunt.util.normalizelf(options.separator));
 
       grunt.file.write(file.dest, src);
